@@ -6,14 +6,14 @@
   "scripts": {
     "test": "flow && jest"
   },
-  "author": "Rob Hogan <roberthogan@blueyonder.co.uk>",
+  "author": "Arweave Team <team@arweave.org>",
   "license": "MIT",
   "peerDependencies": {
     "react-native": "*"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rh389/react-native-securerandom.git"
+    "url": "git+https://github.com/ArweaveTeam/react-native-securerandom.git"
   },
   "keywords": [
     "react-native",
@@ -25,7 +25,7 @@
     "RandomNumberGenerator",
     "Cryptography"
   ],
-  "homepage": "https://github.com/rh389/react-native-securerandom#readme",
+  "homepage": "https://github.com/ArweaveTeam/react-native-securerandom#readme",
   "dependencies": {
     "base64-js": "*"
   },
