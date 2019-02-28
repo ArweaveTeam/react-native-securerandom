@@ -1,5 +1,4 @@
 # react-native-securerandom
-[![npm version](https://badge.fury.io/js/react-native-securerandom.svg)](https://badge.fury.io/js/react-native-securerandom)
 
 A library to generate cryptographically-secure random bytes. Uses `SecRandomCopyBytes` on iOS, `SecureRandom` on Android and `System.Security.Cryptography.RandomNumberGenerator` on Windows.
 
@@ -16,15 +15,31 @@ generateSecureRandom(12).then(randomBytes => console.log(randomBytes));
 
 ## Installation
 
-`$ yarn add react-native-securerandom`
-
-### Automatic linking with react-native link
-
-`$ react-native link react-native-securerandom`
-
-### Manual linking
+```bash
+$ npm install --save github:ArweaveTeam/react-native-securerandom
+```
 
 #### iOS
+
+### Expo CocoaPods installation
+
+Simply add the `RNSecureRandom` pod dependency to your Expo project Podfile `ios/Podfile`
+
+```ruby
+  pod 'Folly',
+    :podspec => "../node_modules/react-native/third-party-podspecs/Folly.podspec",
+  pod 'glog',
+    :podspec => "../node_modules/react-native/third-party-podspecs/glog.podspec",
+
+  pod 'RNSecureRandom',
+    :path => "../node_modules/react-native-securerandom/ios",
+    :podspec => "../node_modules/react-native-securerandom/ios/RNSecureRandom.podspec"
+
+
+  post_install do |installer|
+```
+
+### Manual linking
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
 2. Go to `node_modules` ➜ `react-native-securerandom` and add `RNSecureRandom.xcodeproj`

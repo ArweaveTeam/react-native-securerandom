@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "Arweave Team" => "team@arweave.org" }
   s.platform     = :ios, "7.0"
-  s.source       = { :git => package["repository"]["url"], :tag => "master" }
+  s.source       = { :git => "https://github.com/ArweaveTeam/react-native-securerandom.git", :tag => "master" }
   s.source_files  = "ios/**/*.{h,m}"
   s.requires_arc = true
   s.dependency "React"
